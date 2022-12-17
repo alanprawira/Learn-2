@@ -1,0 +1,13 @@
+.body {
+  width: 1440px;
+  height: 1683px;
+  top: -456px;
+  left: -665px;
+}
+
+.bar-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}/*# sourceMappingURL=main.css.map */
