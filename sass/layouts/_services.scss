@@ -1,7 +1,4 @@
-.services {
-  .container {
-  }
-}
+
 .service-header {margin-top: 41px;
   margin-left: 534px;
 font-size: 40px;
@@ -9,6 +6,10 @@ font-weight: 700;
 line-height: 48px;
 }
 
+.services {
+  .container {
+  }
+}
 .service-main {
   display: flex;
   flex-direction: column;
