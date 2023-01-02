@@ -1,87 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SCSS</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
-</head>
-<!-- -------------------------------- body --------------------------------- -->
-<body class="body">
-  <section class="sec-1">
-    <div>
-    <img class="logo" src="./img/logo.png" alt="mylogo" width="52.83px" height="43.53px">
-    <h1 class="bar-name">COMPANY</h1>  
-    </div>
-    
-<ul class="bar-title">
-  <li class="bar-desk">Home</li>
-  <li class="bar-desk">About Us</li>
-  <li class="bar-desk">Services</li>
-</ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <!-- -------------------------------- body --------------------------------- -->
+  <body class="body">
+    <main>
+      <section class="header">
+        <div class="container">
+          <img
+            class="logo"
+            src="./img/logo.png"
+            alt="mylogo"
+            width="53"
+            height="44"
+          />
+          <h1 class="bar-name">COMPANY</h1>
+          <ul class="bar-title">
+            <li class="bar-desk">Home</li>
+            <li class="bar-desk">About Us</li>
+            <li class="bar-desk">Services</li>
+          </ul>
 
-<div class="search-main">
-  <a class="search-desk">Search...</a>
-</div>
-  </section>
-<!-- -------------------------------- sec2 --------------------------------- -->
-  <section class="sec-2">
- <div>
-  <img class="main-img" src="./img/main.jpg" alt="myimg">
- </div>
-  </section>
-<!-- -------------------------------- sec3 --------------------------------- -->
-  <section class="sec-3">
-<h2 class="service-header">SERVICES</h2>
-<ul class="service-main">
-  <li class="service-title">
-    <h3 class="service-up">Service 1</h3>
-    <img class="cpu-logo" src="./img/cpu.png" alt="mycpu" width="135.49px" height="129.58px">
-    <p class="service-desk">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
-  </li>
-    <li class="service-title">
-      <h3 class="service-up">Service 2<h3> 
-        <p class="service-desk2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the <br>1500s, when an unknown printer took a galley of type and scrambled it to <br>make.</p>
-        <img class="cpu-logo2" src="./img/cpu.png" alt="mycpu" width="135.49px" height="129.58px">
-</li>
-</ul>
+          <div class="search-main">
+            <a class="search-desk">Search...</a>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------------- sec2 --------------------------------- -->
+      <section class="hero">
+        <div class="container">
+          <h2 class="hero-title visually-hidden">Hero</h2>
+        </div>
+      </section>
+      <!-- -------------------------------- sec3 --------------------------------- -->
+      <section class="services">
+        <div class="container">
+          <h2 class="service-header">SERVICES</h2>
+          <ul class="service-main">
+            <li class="service-title">
+              <h3 class="service-up">Service 1</h3>
+              <img src="./img/cpu.png" alt="mycpu" width="136" height="130" />
+              <p class="service-desk">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make.
+              </p>
+            </li>
+            <li class="service-title">
+              <h3 class="service-up">Service 2</h3>
+              <img src="./img/cpu.png" alt="mycpu" width="136" height="130" />
+              <p class="service-desk">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ------------------------------- footer -------------------------------- -->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="company-main">
+          <li class="company-title">
+            <a class="company">Company</a>
+            <p class="company-desk">lorem ipsum</p>
+            <p class="company-desk">lorem ipsum</p>
+            <p class="company-desk">lorem ipsum</p>
+          </li>
 
-  <!-- ------------------------------- footer -------------------------------- -->
-  <footer class="footer">
-<ul class="company-main">
-  <li class="company-title"> 
-    <a class="company">Company</a>
-  <p class="company-desk">lorem ipsum</p>
-  <p class="company-desk">lorem ipsum</p>
-  <p class="company-desk">lorem ipsum</p>
-</li>
+          <li class="company-title">
+            <a class="company">Company</a>
+            <p class="company-desk">lorem ipsum</p>
+            <p class="company-desk">lorem ipsum</p>
+            <p class="company-desk">lorem ipsum</p>
+          </li>
 
-  <li class="company-title"> 
-    <a class="company">Company</a>
-  <p class="company-desk">lorem ipsum</p>
-  <p class="company-desk">lorem ipsum</p>
-  <p class="company-desk">lorem ipsum</p>
-</li>
+          <li class="company-title">
+            <a class="company">Company</a>
+            <p class="company-desk">lorem ipsum</p>
+            <p class="company-desk">lorem ipsum</p>
+            <p class="company-desk">lorem ipsum</p>
+          </li>
+        </ul>
 
-  <li class="company-title"> 
-    <a class="company">Company</a>
-  <p class="company-desk">lorem ipsum</p>
-  <p class="company-desk">lorem ipsum</p>
-  <p class="company-desk">lorem ipsum</p>
-</li>
-</ul>
-
-<ul class="soc">
-  <li>Twitter</li>
-  <li>LinkedIn</li>
-  <li>Youtube</li>
-</ul>
-<div>
-  <a class="close">© 2022 Company</a>
-</div>
-  </footer>
-
-</body>
+        <ul class="soc">
+          <li>Twitter</li>
+          <li>LinkedIn</li>
+          <li>Youtube</li>
+        </ul>
+        <div>
+          <a class="close">© 2022 Company</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

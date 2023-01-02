@@ -1,2 +1,9 @@
+@import './utils/mixins';
+@import './base/common';
+
+/* --------------------------------- layouts -------------------------------- */
 @import './layouts/header';
-@import './layouts/body';
+@import './layouts/hero';
+@import './layouts/services';
+@import './layouts/footer';
+/* -------------------------------------------------------------------------- */
