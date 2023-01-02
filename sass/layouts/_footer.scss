@@ -1,16 +1,47 @@
-.footer {
+.footer {background-color: black;
+  max-width: 100%;
   .container {
   }
 }
 .company-main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 58px;
+  margin-left: 318px;
+  gap: 72px;
 }
 .company-title {
 }
 .company {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
 }
+
 .company-desk {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  
 }
-.soc {
+.soc {    
+  display: flex;
+  flex-direction: row;
+  margin-top: 74px;
+  margin-left: 415px;
+  gap: 70px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 9px;
+
 }
-.close {
+.close {  
+  margin-top: 84px;
+  margin-left: 482px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+
+
 }

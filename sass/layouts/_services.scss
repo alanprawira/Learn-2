@@ -2,13 +2,64 @@
   .container {
   }
 }
-.service-header {
+.service-header {margin-top: 41px;
+  margin-left: 534px;
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
 }
+
 .service-main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 41px;
+  margin-left: 308px;
+  gap: 35px;
 }
-.service-title {
+.service-title { padding: 1px;
+  background: #086066;
+  border: 1px solid #086066;
+  border-radius: 40px;
+  width: 1088px;
+  height: 291px;
+  margin-top: 9px;
+  margin-left: -193px;
 }
-.service-up {
+.service-up {  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-left: 432px;
+  margin-top: 7px;
 }
-.service-desk {
+.service-desk-1 { font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  margin-top: 48px;
+  margin-left: 245px;
+  margin-right: 91px;
+}
+
+.service-desk-2 {    font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  margin-top: 48px;
+  margin-left: 100px;
+  margin-right: 241px;
+
+}
+
+.service-logo-1 {display: flex;
+  margin-top: 23px;
+  position: absolute;
+  margin-left: 80px;
+
+}
+
+.service-logo-2 { display: flex;
+  margin-top: 23px;
+  position: absolute;
+  margin-left: 844px;
+
 }
