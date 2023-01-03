@@ -1,8 +1,8 @@
 .header {
   padding-bottom: 22px;
   .container {
-    background: #086066;
-    border: 1px solid #086066;
+    background: $bgColor;
+    border: 1px solid $bgColor;
     border-radius: 40px;
     height: 108px;
     margin-top: 9px;
@@ -52,8 +52,8 @@
 .header-btn {
   display: none;
   @include desktop {
-    background: #d9d9d9;
-    border: 1px solid #d9d9d9;
+    background: $lightOrange;
+    border: 1px solid $lightOrange;
     border-radius: 40px;
     margin-left: auto;
     max-width: 300px;
@@ -87,7 +87,7 @@
 .header-menu {
   position: fixed;
   z-index: 1000000000;
-  background-color: rgb(255, 255, 255);
+  background-color: $white;
   top: 0;
   left: 0;
   width: 100vw;
@@ -108,6 +108,7 @@
   top: 20px;
 }
 .menu-close {
+  transition: fill $transition;
   &:focus,
   &:hover {
     fill: red;
@@ -140,7 +141,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: #086066;
+    background-color: $bgColor;
     margin-top: auto;
     margin-bottom: auto;
     top: 0;
@@ -150,7 +151,7 @@
   }
   &:hover,
   &:focus {
-    color: #086066;
+    color: $bgColor;
   }
   @include tablet {
     font-size: 82px;

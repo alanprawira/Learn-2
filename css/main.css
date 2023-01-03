@@ -170,7 +170,7 @@ img {
 .header-menu {
   position: fixed;
   z-index: 1000000000;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   top: 0;
   left: 0;
   width: 100vw;
@@ -194,6 +194,9 @@ img {
   top: 20px;
 }
 
+.menu-close {
+  transition: fill 300ms linear;
+}
 .menu-close:focus, .menu-close:hover {
   fill: red;
 }
