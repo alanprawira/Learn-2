@@ -1,66 +1,100 @@
-
-.service-header {margin-top: 41px;
-  margin-left: 534px;
-font-size: 40px;
-font-weight: 700;
-line-height: 48px;
-}
-
 .services {
+  background: #00203f;
+  color: #fff;
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    max-width: 100%;
   }
 }
+.service-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+.service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    align-items: stretch;
+    flex-direction: row-reverse;
+  }
+}
+.service-header {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
 .service-main {
   display: flex;
   flex-direction: column;
   margin-top: 41px;
-  margin-left: 308px;
   gap: 35px;
 }
-.service-title { padding: 1px;
+.service-title {
+  padding: 1px;
   background: #086066;
   border: 1px solid #086066;
   border-radius: 40px;
-  width: 1088px;
-  height: 291px;
+  max-width: calc(100% - 10px);
   margin-top: 9px;
-  margin-left: -193px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    align-items: stretch;
+  }
+  @include desktop {
+    max-width: 1088px;
+    padding: 15px 60px;
+  }
 }
-.service-up {  font-size: 40px;
+.service-up {
+  font-size: 40px;
   font-weight: 500;
   line-height: 48px;
-  margin-left: 432px;
   margin-top: 7px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
-.service-desk-1 { font-size: 20px;
+.service-desk {
+  font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   color: #000;
-  margin-top: 48px;
-  margin-left: 245px;
-  margin-right: 91px;
+  margin: 0 auto;
+  padding: 25px;
+  @include desktop {
+    padding: 0;
+    font-size: 25px;
+  }
 }
-
-.service-desk-2 {    font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #000;
-  margin-top: 48px;
-  margin-left: 100px;
-  margin-right: 241px;
-
+.service-desk-1 {
+  @include desktop {
+    margin-left: 35px;
+  }
 }
-
-.service-logo-1 {display: flex;
-  margin-top: 23px;
-  position: absolute;
-  margin-left: 80px;
-
+.service-desk-2 {
+  @include desktop {
+    margin-right: 40px;
+  }
 }
-
-.service-logo-2 { display: flex;
-  margin-top: 23px;
-  position: absolute;
-  margin-left: 844px;
-
+.service-logo {
+  @include tablet {
+    margin: 0 10px;
+  }
+  @include desktop {
+    margin: 0;
+  }
 }

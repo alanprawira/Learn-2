@@ -21,26 +21,41 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <!-- -------------------------------- header --------------------------------- -->
-  <body class="body">
+  <body class="body" data-no-scroll>
     <main>
       <section class="header">
         <div class="container">
-          <img
-            class="logo"
-            src="./img/logo.png"
-            alt="mylogo"
-            width="53"
-            height="44"
-          />
-          <h1 class="bar-name">COMPANY</h1>
-          <ul class="bar-title">
-            <li class="bar-desk">Home</li>
-            <li class="bar-desk">About Us</li>
-            <li class="bar-desk">Services</li>
-          </ul>
-
-          <div class="search-main">
-            <a class="search-desk">Search...</a>
+          <div class="logo">
+            <img src="./img/logo.png" alt="mylogo" width="53" height="44" />
+            <p class="bar-name">COMPANY</p>
+          </div>
+          <nav class="header-nav">
+            <ul class="bar-title">
+              <li class="bar-desk">Home</li>
+              <li class="bar-desk">About Us</li>
+              <li class="bar-desk">Services</li>
+            </ul>
+          </nav>
+          <button type="button" class="header-btn">Search...</button>
+          <!-- open menu -->
+          <button type="button" class="open-btn" data-menu-open>
+            <svg class="open-icon" width="50" height="50">
+              <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header-menu is-hidden" data-menu>
+          <div class="menu-container">
+            <button type="button" class="close-btn" data-menu-close>
+              <svg class="menu-close" width="50" height="50">
+                <use href="./img/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="bar-title-mob">
+              <li class="bar-desk-mob">Home</li>
+              <li class="bar-desk-mob">About Us</li>
+              <li class="bar-desk-mob">Services</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -57,25 +72,39 @@
           <ul class="service-main">
             <li class="service-title">
               <h3 class="service-up">Service 1</h3>
-              <img class="service-logo-1"
-               src="./img/cpu.png" alt="mycpu" width="136" height="130" />
-              <p class="service-desk-1">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make.
-              </p>
+              <div class="service-holder">
+                <img
+                  class="service-logo"
+                  src="./img/cpu.png"
+                  alt="mycpu"
+                  width="136"
+                  height="130"
+                />
+                <p class="service-desk-1 service-desk">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make.
+                </p>
+              </div>
             </li>
             <li class="service-title">
               <h3 class="service-up">Service 2</h3>
-              <img class="service-logo-2" 
-              src="./img/cpu.png" alt="mycpu" width="136" height="130" />
-              <p class="service-desk-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make.
-              </p>
+              <div class="service-container">
+                <img
+                  class="service-logo"
+                  src="./img/cpu.png"
+                  alt="mycpu"
+                  width="136"
+                  height="130"
+                />
+                <p class="service-desk-2 service-desk">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -105,17 +134,25 @@
             <p class="company-desk">lorem ipsum</p>
             <p class="company-desk">lorem ipsum</p>
           </li>
+          <li class="company-title">
+            <a class="company">Company</a>
+            <p class="company-desk">lorem ipsum</p>
+            <p class="company-desk">lorem ipsum</p>
+            <p class="company-desk">lorem ipsum</p>
+          </li>
         </ul>
 
         <ul class="soc">
-          <li>Twitter</li>
-          <li>LinkedIn</li>
-          <li>Youtube</li>
+          <li class="soc-item">Twitter</li>
+          <li class="soc-item">LinkedIn</li>
+          <li class="soc-item">Youtube</li>
         </ul>
         <div>
           <a class="close">© 2022 Company</a>
         </div>
       </div>
     </footer>
+    <!-- --------------------------------- js ---------------------------------- -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

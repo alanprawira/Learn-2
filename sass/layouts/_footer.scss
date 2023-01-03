@@ -1,47 +1,100 @@
-.footer {background-color: black;
-  max-width: 100%;
+.footer {
+  color: aliceblue;
+  background-color: black;
   .container {
+    padding-top: 28px;
   }
 }
 .company-main {
+  margin-bottom: 50px;
   display: flex;
-  flex-direction: row;
-  margin-top: 58px;
-  margin-left: 318px;
-  gap: 72px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  @include mobile {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  @include desktop {
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
 }
 .company-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mobile {
+    max-width: calc((100% - 30px) / 2);
+  }
+  @include tablet {
+    width: calc((100% - 60px) / 2);
+  }
 }
 .company {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
+  margin-bottom: 15px;
+  display: block;
+  color: antiquewhite;
+  @include tablet {
+    font-size: 50px;
+  }
+  @include desktop {
+    font-size: 40px;
+  }
 }
 
 .company-desk {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   line-height: 36px;
-  
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include tablet {
+    font-size: 40px;
+  }
+  @include desktop {
+    font-size: 30px;
+  }
 }
-.soc {    
+.soc {
   display: flex;
-  flex-direction: row;
-  margin-top: 74px;
-  margin-left: 415px;
-  gap: 70px;
+  flex-wrap: wrap;
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
-  margin-bottom: 9px;
-
+  margin-bottom: 12px;
+  justify-content: center;
+  gap: 20px;
+  @include tablet {
+    font-size: 40px;
+  }
+  @include desktop {
+    gap: 70px;
+    flex-wrap: nowrap;
+    font-size: 30px;
+  }
 }
-.close {  
-  margin-top: 84px;
-  margin-left: 482px;
-  font-size: 40px;
+.close {
+  font-size: 20px;
   font-weight: 500;
-  line-height: 48px;
-
-
+  display: flex;
+  justify-content: center;
+  @include tablet {
+    font-size: 30px;
+  }
+  @include desktop {
+    font-size: 40px;
+  }
+}
+.soc-item {
+  text-decoration: underline;
 }

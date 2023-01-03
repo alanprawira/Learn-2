@@ -1,48 +1,167 @@
-.header {margin-bottom: 22px;
+.header {
+  padding-bottom: 22px;
   .container {
-    padding: 1px;
     background: #086066;
     border: 1px solid #086066;
     border-radius: 40px;
-    width: 1837px;
     height: 108px;
     margin-top: 9px;
-    padding-bottom: 134px;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 60px);
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
   }
-
-.logo {margin-left: 121px;margin-top: 41px;
 }
-.bar-name {margin-left: 178px;
-  margin-top: -43px;
-  font-size: 40px;
+
+.logo {
+  margin-left: 5px;
+  display: flex;
+  margin-right: 18px;
+  max-width: 150px;
+  @include desktop {
+    margin-left: 38px;
+    margin-right: 140px;
+  }
+}
+.bar-name {
+  font-size: 25px;
   font-weight: 700;
   line-height: 48px;
+  @include desktop {
+    font-size: 40px;
+  }
 }
 
-.bar-title {    display: flex;
-  flex-direction: row;
-  margin-left: 474px;
-  margin-top: -42px;
-  gap: 15px;
+.bar-title {
+  display: none;
+  @include desktop {
+    display: flex;
+    gap: 15px;
+  }
 }
-.bar-desk {font-size: 32px;
+.bar-desk {
+  font-size: 32px;
   font-weight: 400;
   line-height: 39px;
-  
 }
-.search-main {margin-left: 1526px;
-  margin-top: -52px;
-  padding: 11px;
-  background: #d9d9d9;
-  border: 1px solid #d9d9d9;
-  border-radius: 40px;
-  width: 250px;
+.header-btn {
+  display: none;
+  @include desktop {
+    background: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    border-radius: 40px;
+    margin-left: auto;
+    max-width: 300px;
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    padding: 15px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* ---------------------------------- menu ---------------------------------- */
+.open-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  @include desktop {
+    display: none;
+  }
+}
+.open-icon {
+  fill: black;
+}
+// menu
+
+.header-menu {
+  position: fixed;
+  z-index: 1000000000;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  @include desktop {
+    display: none;
+  }
 }
 
-.search-desk {color: black;
-  font-size: 40px;
+.menu-container {
+  position: relative;
+}
+.close-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.menu-close {
+  &:focus,
+  &:hover {
+    fill: red;
+  }
+  @include tablet {
+    width: 60px;
+    height: 60px;
+  }
+}
+.bar-title-mob {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+  padding-top: 140px;
+  padding-right: 40%;
+  @include tablet {
+    padding-top: 200px;
+    gap: 100px;
+  }
+}
+.bar-desk-mob {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
   font-weight: 500;
-  line-height: 48px;
-  
+  line-height: 39px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #086066;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  &:hover,
+  &:focus {
+    color: #086066;
+  }
+  @include tablet {
+    font-size: 82px;
+    &::after {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
